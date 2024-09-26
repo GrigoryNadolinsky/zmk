@@ -14,18 +14,6 @@
 #define ADJ 3
 
 / {
-    behaviors {
-        hold_tap_f_ctrl: hold_tap_f_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "F as Ctrl";
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp F>, <&kp LCTRL>;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
