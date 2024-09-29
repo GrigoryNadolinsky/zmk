@@ -18,9 +18,17 @@
         dot: dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp EQUAL>;
+            bindings = <&macro_tap>, <&kp EQUAL>;
 
             label = "DOT";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&macro_tap>;
+
+            label = "NEW_MACRO";
         };
     };
 
