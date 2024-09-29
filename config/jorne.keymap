@@ -14,6 +14,30 @@
 #define ADJ 3
 
 / {
+    macros {
+        dot: dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&macro_press>;
+
+            label = "DOT";
+        };
+    };
+
+    behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,9 +49,9 @@
             //                           | RSE | SPC | LWR |   | LWR | BSPC | RSE |
 
             bindings = <
-&bt BT_CLR_ALL  &kp GRAVE         &kp Q  &kp W           &kp E           &kp R        &kp T               &kp Y             &kp U        &kp I           &kp O           &kp P         &kp LBKT       &kp LEFT_WIN
-                &kp TAB           &kp A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LCTRL F  &mt LEFT_SHIFT G    &mt LEFT_SHIFT H  &mt LCTRL J  &mt LEFT_ALT K  &mt LEFT_WIN L  &kp SEMI      &mt RCTRL SQT
-                &kp LS(LEFT_ALT)  &kp Z  &kp X           &kp C           &kp V        &kp B               &kp N             &kp M        &kp COMMA       &kp DOT         &kp KP_COMMA  &kp KP_DOT
+&bt BT_CLR_ALL  &kp GRAVE         &kp Q  &kp W           &kp E           &kp R        &kp T               &kp Y             &kp U        &kp I           &kp O           &kp P     &kp LBKT       &kp LEFT_WIN
+                &kp TAB           &kp A  &mt LEFT_WIN S  &ht LEFT_ALT D  &ht LCTRL F  &ht LEFT_SHIFT G    &ht LEFT_SHIFT H  &ht LCTRL J  &ht LEFT_ALT K  &ht LEFT_WIN L  &kp SEMI  &mt RCTRL SQT
+                &kp LS(LEFT_ALT)  &kp Z  &kp X           &kp C           &kp V        &kp B               &kp N             &kp M        &kp COMMA       &kp DOT         &dot      &dot
                                                          &kp ESCAPE      &mo 2        &kp SPACE           &kp ENTER         &mo 1        &kp BACKSPACE
             >;
         };
