@@ -34,6 +34,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(D) &kp LA(F4) &kp UP_ARROW &kp ENTER>;
             label = "SLEEP_MACRO";
+            tap-ms = <50>;
         };
     };
 
