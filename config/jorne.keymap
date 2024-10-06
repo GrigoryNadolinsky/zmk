@@ -28,6 +28,15 @@
         };
     };
 
+    macros {
+        sleep_macro: sleep_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(D) &kp LA(F4) &kp UP_ARROW &kp ENTER>;
+            label = "SLEEP_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,10 +93,10 @@
             //                          |     |     |     |   |     |     |     |
 
             bindings = <
-&bootloader  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_SLEEP_MODE  &none         &none         &none           &none         &none         &none         &none         &none         &none       &none
-             &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-             &none       &none            &none             &none         &none         &none           &none         &none         &none         &none         &none         &none
-                                                            &trans        &none         &trans          &trans        &none         &trans
+&bootloader  &kp C_MUTE  &kp C_VOLUME_UP  &sleep_macro  &none         &none         &none           &none         &none         &none         &none         &none         &none       &none
+             &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+             &none       &none            &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                                                        &trans        &none         &trans          &trans        &none         &trans
             >;
         };
     };
