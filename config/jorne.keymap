@@ -54,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP      &kp PLUS      &kp LS(N7)                   &kp LS(N7)        &kp LS(N9)                 &kp KP_MULTIPLY         &trans  &trans
-        &trans  &ht LEFT_WIN END  &ht LEFT_ALT LEFT  &ht LCTRL DOWN  &ht LEFT_SHIFT RIGHT  &kp PAGE_DOWN    &kp KP_MINUS  &ht LEFT_SHIFT LS(NUMBER_4)  &ht LCTRL LS(N5)  &ht LEFT_ALT LS(NUMBER_6)  &ht LEFT_WIN KP_DIVIDE  &trans
-        &trans  &trans            &kp LS(LC(LEFT))   &trans          &kp LS(LC(RIGHT))     &kp INSERT       &kp EQUAL     &kp LS(NUMBER_1)             &kp LS(NUMBER_2)  &kp LS(NUMBER_3)           &kp LS(N0)              &trans
-                                                     &trans          &mo 3                 &trans           &trans        &mo 3                        &trans
+&none  &trans  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP      &kp PLUS      &kp LS(N7)                   &kp LS(N7)        &kp LS(N9)                 &kp KP_MULTIPLY         &trans  &none
+       &trans  &ht LEFT_WIN END  &ht LEFT_ALT LEFT  &ht LCTRL DOWN  &ht LEFT_SHIFT RIGHT  &kp PAGE_DOWN    &kp KP_MINUS  &ht LEFT_SHIFT LS(NUMBER_4)  &ht LCTRL LS(N5)  &ht LEFT_ALT LS(NUMBER_6)  &ht LEFT_WIN KP_DIVIDE  &trans
+       &trans  &trans            &kp LS(LC(LEFT))   &trans          &kp LS(LC(RIGHT))     &kp INSERT       &kp EQUAL     &kp LS(NUMBER_1)             &kp LS(NUMBER_2)  &kp LS(NUMBER_3)           &kp LS(N0)              &trans
+                                                    &trans          &mo 3                 &trans           &trans        &mo 3                        &trans
             >;
         };
 
@@ -84,10 +84,10 @@
             //                          |     |     |     |   |     |     |     |
 
             bindings = <
-&sys_reset  &none       &bootloader   &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &sys_reset
-            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-            &none       &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-                                                    &trans        &none         &trans          &trans        &none         &trans
+&bootloader  &kp K_POWER  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none       &none
+             &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+             &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                                                      &trans        &none         &trans          &trans        &none         &trans
             >;
         };
     };
