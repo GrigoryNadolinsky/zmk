@@ -32,9 +32,16 @@
         sleep_macro: sleep_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(D) &kp LA(F4) &kp UP_ARROW &kp ENTER>;
+            bindings = <
+                &kp LG(D)
+                &delay 500
+                &kp LA(F4)
+                &delay 50
+                &kp UP_ARROW
+                &delay 50
+                &kp ENTER
+            >;
             label = "SLEEP_MACRO";
-            wait-ms = <500>;
         };
     };
 
