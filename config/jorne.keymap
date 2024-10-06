@@ -69,9 +69,9 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&none  &none          &kp RA(TILDE)      &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_6       &kp RS(BACKSLASH)  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp LS(PERIOD)     &kp GRAVE           &none  &none
-       &kp N5         &kp BACKSLASH      &kp NUMBER_8   &kp MINUS     &kp LS(EQUAL)  &kp EQUAL          &kp SLASH          &kp NUMBER_9              &kp NUMBER_0               &kp LS(COMMA)      &kp LS(GRAVE)       &none
-       &kp RA(GRAVE)  &kp RS(RA(SLASH))  &kp RA(MINUS)  &kp NUMBER_1  &kp NUMBER_7   &kp RA(RS(SQT))    &kp RS(MINUS)      &kp RA(RS(LEFT_BRACKET))  &kp RS(RA(RIGHT_BRACKET))  &kp RA(RS(COMMA))  &kp RA(RS(PERIOD))  &none
+&none  &none          &kp SQT            &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_6       &kp RS(BACKSLASH)  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp LS(PERIOD)  &kp GRAVE       &none          &none
+       &kp N5         &kp BACKSLASH      &kp NUMBER_8   &kp MINUS     &kp LS(EQUAL)  &kp EQUAL          &kp SLASH          &kp NUMBER_9              &kp NUMBER_0               &kp LS(COMMA)   &kp LS(GRAVE)   &none
+       &kp RA(GRAVE)  &kp RS(RA(SLASH))  &kp RA(MINUS)  &kp NUMBER_1  &kp NUMBER_7   &kp RA(RS(SQT))    &kp RS(MINUS)      &kp RA(RS(LEFT_BRACKET))  &kp RS(RA(RIGHT_BRACKET))  &kp RA(COMMA)   &kp RA(PERIOD)  &kp RA(SLASH)
                                                         &trans        &mo 3          &trans             &trans             &mo 3                     &kp DEL
             >;
         };
