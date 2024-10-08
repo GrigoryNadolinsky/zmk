@@ -64,7 +64,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &trans  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP      &kp PLUS      &kp LS(N7)                   &kp LS(N7)        &kp LS(N9)                 &kp KP_MULTIPLY         &trans  &none
+&none  &trans  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP      &kp PLUS      &kp LS(N7)                   &kp LS(NUMBER_8)  &kp LS(N9)                 &kp KP_MULTIPLY         &trans  &none
        &trans  &ht LEFT_WIN END  &ht LEFT_ALT LEFT  &ht LCTRL DOWN  &ht LEFT_SHIFT RIGHT  &kp PAGE_DOWN    &kp KP_MINUS  &ht LEFT_SHIFT LS(NUMBER_4)  &ht LCTRL LS(N5)  &ht LEFT_ALT LS(NUMBER_6)  &ht LEFT_WIN KP_DIVIDE  &trans
        &trans  &trans            &kp LS(LC(LEFT))   &trans          &kp LS(LC(RIGHT))     &kp INSERT       &kp EQUAL     &kp LS(NUMBER_1)             &kp LS(NUMBER_2)  &kp LS(NUMBER_3)           &kp LS(N0)              &trans
                                                     &trans          &mo 3                 &trans           &trans        &mo 3                        &trans
