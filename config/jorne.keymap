@@ -40,7 +40,7 @@
         volume_max: volume_max {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP &kp C_VOLUME_UP>;
             label = "VOLUME_MAX";
             wait-ms = <1>;
         };
@@ -48,22 +48,25 @@
         BRIGHTNESS_DOWN: BRIGHTNESS_DOWN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_BRIGHTNESS_DEC>;
+            bindings = <&kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC>;
             label = "BRIGHTNESS_DOWN";
+            wait-ms = <1>;
         };
 
         BRIGHTNESS_UP: BRIGHTNESS_UP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_BRIGHTNESS_INC>;
+            bindings = <&kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC>;
             label = "BRIGHTNESS_UP";
+            wait-ms = <1>;
         };
 
         volume_min: volume_min {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_VOLUME_DOWN>;
+            bindings = <&kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN &kp C_VOLUME_DOWN>;
             label = "VOLUME_MIN";
+            wait-ms = <1>;
         };
     };
 
