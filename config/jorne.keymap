@@ -44,6 +44,27 @@
             label = "VOLUME_MAX";
             wait-ms = <1>;
         };
+
+        BRIGHTNESS_DOWN: BRIGHTNESS_DOWN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_BRIGHTNESS_DEC>;
+            label = "BRIGHTNESS_DOWN";
+        };
+
+        BRIGHTNESS_UP: BRIGHTNESS_UP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_BRIGHTNESS_INC>;
+            label = "BRIGHTNESS_UP";
+        };
+
+        volume_min: volume_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOLUME_DOWN>;
+            label = "VOLUME_MIN";
+        };
     };
 
     keymap {
@@ -102,10 +123,10 @@
             //                          |     |     |     |   |     |     |     |
 
             bindings = <
-&none  &none  &kp F1  &kp F2   &kp F3   &kp F4   &ht C_BRIGHTNESS_MAXIMUM C_BRIGHTNESS_INC    &kp C_VOLUME_UP           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_FAST_FORWARD  &none
-       &none  &kp F5  &kp F6   &kp F7   &kp F8   &ht C_BRIGHTNESS_MINIMUM C_BRIGHTNESS_DEC    &ht C_MUTE C_VOLUME_DOWN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp C_REWIND
-       &mo 4  &kp F9  &kp F10  &kp F11  &kp F12  &sleep_macro                                 &none                     &none           &none             &none         &none         &none
-                               &trans   &none    &trans                                       &trans                    &none           &trans
+&none  &BRIGHTNESS_UP    &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_FAST_FORWARD  &none
+       &BRIGHTNESS_DOWN  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC    &ht C_MUTE C_VOLUME_DOWN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp C_REWIND
+       &mo 4             &kp F9  &kp F10  &kp F11  &kp F12  &sleep_macro            &volume_max               &none           &none             &none         &none         &volume_min
+                                          &trans   &none    &trans                  &trans                    &none           &trans
             >;
         };
 
